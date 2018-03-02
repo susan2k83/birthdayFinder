@@ -36,7 +36,7 @@ $(document).ready(function () {
         };
 
         var result = getTheDay();
-        $("#displayDay").text(result);
+        $("#displayDay").text(result).addClass('animated bounceInDown');
         console.log(getTheDay());
     });
 
