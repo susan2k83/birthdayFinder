@@ -1,0 +1,126 @@
+body {
+    font-family: 'Source Sans Pro';
+    background: #337280;
+    margin: 0;
+    color: white;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 60% 40%;
+    grid-template-areas: "header" "body" "footer";
+}
+
+img {
+    width: 150px;
+    justify-self: left;
+    border: 3px solid #00222A;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+    height: 75px;
+    background: #FFFFFF;
+    padding: 1em;
+    grid-template-rows: auto;
+    grid-area: header;
+}
+
+h3 {
+    color: #00222A;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-left: 100px;
+    font-family: 'Princess Sofia', cursive;
+}
+
+.container {
+    display: grid;
+    height: 200px;
+    grid-template-columns: 60% auto;
+    padding: 4em 1em;
+    grid-area: body;
+    grid-gap: 10px;
+}
+
+label {
+    font-size: 30px;
+}
+
+input[type=date] {
+    border: 3px solid #00222A;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: inherit;
+    font-size: 100%;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 3px solid #00222A;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: inherit;
+    font-size: 100%;
+}
+
+footer {
+    /* background:#571212; */
+    background: #888C8D;
+    grid-area: footer;
+    border-top: 3px solid #015C72;
+    border-bottom: 3px solid #015C72;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    list-style-type: none;
+}
+
+ul li {
+    padding: 2em;
+    color: white;
+    font-size: 20px;
+}
+
+ul li span {
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+#displayDay {
+    color: #00222A;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        grid-template-areas: "header" "body" "footer";
+    }
+    ul,
+    .container,
+    header {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .container,
+    header,
+    h3 {
+        text-align: center;
+    }
+    header {
+        height: auto;
+    }
+    h3 {
+        padding-left: 0;
+    }
+    .my-font-size-class {
+        font-size: 17px;
+    }
+}
