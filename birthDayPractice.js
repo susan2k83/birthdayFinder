@@ -2,8 +2,9 @@ $(document).ready(function () {
 
     // This code will return the day of the week that corresponds to a birthdate
 
+// $(document).on("click", "#submitButton", 
 
-    $(document).bind("click", "#submitButton", function () {
+    $("#submitButton").bind("click", function () {
         var date = $("#userInput").val();
         var dateToString = date.toString();
         dateToString = dateToString.replace(/-/g, ',');
