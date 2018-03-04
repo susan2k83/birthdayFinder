@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    $(".jQMessage").text("..and this message is from jQuery");
-
     // This code will return the day of the week that corresponds to a birthdate
 
 
