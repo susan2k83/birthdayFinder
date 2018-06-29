@@ -9,7 +9,7 @@ $(document).ready(function () {
         var dateToString = date.toString();
         dateToString = dateToString.replace(/-/g, ',');
         console.log(dateToString);
-
+        
         // var date = "YYYY,MM,DD";
         var birthday = new Date(dateToString);
         var dayOfWeek = birthday.getDay();

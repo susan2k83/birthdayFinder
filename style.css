@@ -1,30 +1,9 @@
-body {
-    font-family: 'Source Sans Pro';
-    background: #337280;
-    margin: 0;
-    color: white;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: auto;
-    grid-template-rows: auto 50% 50%;
-    grid-template-areas: "header" "container" "footer";
-}
-
-img {
-    width: 150px;
-    justify-self: center;
-    border: 3px solid #00222A;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 header {
-    height: 75px;
+    display: flex;
+    height: 100px;
     background: #FFFFFF;
-    padding: 1em;
-    grid-template-rows: auto;
-    grid-area: header;
+    border-bottom: 4px solid #015C72;
 }
-
 h3 {
     color: #00222A;
     font-size: 30px;
@@ -33,14 +12,45 @@ h3 {
     padding-left: 100px;
     font-family: 'Princess Sofia', cursive;
 }
-
-.container {
-    display: grid;
-    height: 200px;
-    grid-template-columns: 60% auto;
-    padding: 4em 1em;
-    grid-area: container;
-    grid-gap: 10px;
+.container-1 {
+    display: flex;
+    height: 400px;
+    border-bottom: 3px solid #015C72;
+}
+.container-stacked{
+    flex-grow: 1;
+}
+.container-right-side-image {
+    flex: 0 0 500px;
+    flex-wrap: wrap;
+}
+.container-1 div {
+    padding: 10px;
+    background: #337280;
+}
+.box-3{
+    border-style: solid;
+    box-sizing: border-box;
+    width: auto;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: black;
+}
+.box-4 {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+img {
+    width: 200px;
+    justify-self: center;
+    border: 3px solid #00222A;
+    box-shadow: 0 10px 10px -4px black;    
+}
+body {
+    font-family: 'Source Sans Pro';
+    background: #888C8D;
+    margin: 0;
+    color: white;
 }
 
 label {
@@ -48,96 +58,63 @@ label {
 }
 
 input[type=date] {
-    border: 3px solid #00222A;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid white;
+    background: transparent;
+    box-sizing:border-box;
+    border-radius: 3px;
+    color: white;
     font-family: inherit;
+    margin-left: 5px;
     font-size: 100%;
 }
 
 .button {
     height: 20px;
     width: 20px;
-    background-color: white;
-    color: black;
-    border: 3px solid #00222A;
-    padding: 2px 7px 2px 7px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 3px 7px 3px 7px;
     text-decoration: none;
-    
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-family: inherit;
     font-size: 100%;
-
 }
-
-footer {
-    /* background:#571212; */
-    background: #888C8D;
-    border-top: 3px solid #015C72;
-    border-bottom: 3px solid #015C72;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    grid-template-rows: auto;
-    grid-area: footer;
-}
-
 ul {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 10px;
+    position: relative;
+    min-height: 20px;
     list-style-type: none;
 }
-
-ul li {
-    padding: 2em;
-    color: white;
-    font-size: 20px;
-}
-
 ul li span {
-    display: block;
+    display: flex;
     font-size: 1.4em;
     margin-bottom: 1em;
     color: white;
 }
 
 #displayDay {
-    color: #00222A;
+    color: white;
     font-size: 30px;
 }
 
-@media only screen and (max-width: 500px) {
-    body {
-        grid-template-areas: "header" "container" "footer";
-    }
-    ul,
-    .container,
-    header, footer {
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-    }
-    .container,
-    header,footer,
-    h3 {
-        text-align: center;
-        padding-left: 0;
-    }
-    header, footer, img {
-        height: auto;
-    }
-    #content {
-        margin-top: -50px;
-    }
+@media only screen and (max-width: 800px) {
     
-    img {
-        width:85px;
+    .container-1,
+    header, footer, .header-text, ul li span {
+       text-align: center;
+       padding-left: 0;
+       flex-direction: column;
     }
-    .my-font-size-class {
-        font-size: 17px;
+    ul li span {
+        min-height: 20px;
+    }
+    .box-4 {
+        margin-left: 0px;
+    }
+    img {
+        width: 85px;
     }
     
 }
