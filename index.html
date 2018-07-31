@@ -11,8 +11,11 @@
   <link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
 
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
     crossorigin="anonymous">
+
   <link media="all" type="text/css" rel="stylesheet" href="style.css">
 
 </head>
@@ -22,7 +25,7 @@
     <h3 class="header-text">Did you ever wonder... </h3>
   </header>
 
-  <div class="container-1">
+  <div class="container">
     <div class="container-stacked">
 
       <div class="box-1">
@@ -38,33 +41,41 @@
           </div>
         </form>
       </div>
+
       <div class="box-3">
         <ul>
           <li>
-            <div class="display-area">
+            <div>
               <span id="displayDay"></span>
             </div>
-
           </li>
         </ul>
       </div>
+
+      <div>
+        <label for="history_label">What happened on this day in history?</label>
+         <a href=# id="wikiButton" data-role="button" class="button">Go</a>
+      </div>
     </div>
     <!--end of container-stacked-->
-
     <div class="container-right-side-image">
       <div class="box-4">
         <img src="birthdayCake.jpg" />
       </div>
     </div>
-
+    
   </div>
   <!--end of container-1-->
-  <footer></footer>
+  <footer>
+    <div>
+      <ul id="displayWiki"></ul>
+    </div>
+  </footer>
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-  <script src="birthDayPractice.js">
-  </script>
+  <script src="birthDayPractice.js"></script>
+  <script src="wiki5.js"></script>
 </body>
 
 </html>

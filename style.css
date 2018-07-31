@@ -2,8 +2,10 @@ header {
     display: flex;
     height: 100px;
     background: #FFFFFF;
-    border-bottom: 4px solid #015C72;
+    border-bottom: 6px solid #015C72;
+    border-top: 3px solid #015C72;
 }
+
 h3 {
     color: #00222A;
     font-size: 30px;
@@ -12,40 +14,73 @@ h3 {
     padding-left: 100px;
     font-family: 'Princess Sofia', cursive;
 }
-.container-1 {
-    display: flex;
-    height: 400px;
-    border-bottom: 3px solid #015C72;
+
+p {
+    font-family: 'Source Sans Pro';
+    font-size: 1.25em;
+    color: white;
 }
-.container-stacked{
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    border-bottom: 6px solid #015C72;
+}
+
+.container-stacked {
     flex-grow: 1;
 }
-.container-right-side-image {
+
+.container-right-side-img {
     flex: 0 0 500px;
     flex-wrap: wrap;
 }
-.container-1 div {
+
+.container div {
     padding: 10px;
     background: #337280;
 }
-.box-3{
+
+.box-1 {}
+
+.box-2 {}
+
+.box-3 {
     border-style: solid;
     box-sizing: border-box;
-    width: auto;
+    width: 430px;
     border-width: 2px;
     border-radius: 3px;
     border-color: black;
+    margin-left: 10px;
 }
+
 .box-4 {
     margin-left: 50px;
     margin-top: 30px;
 }
+
+.display-area {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: inherit;
+    border-radius: 3px;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 img {
     width: 200px;
     justify-self: center;
     border: 3px solid #00222A;
-    box-shadow: 0 10px 10px -4px black;    
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 body {
     font-family: 'Source Sans Pro';
     background: #888C8D;
@@ -57,13 +92,19 @@ label {
     font-size: 30px;
 }
 
+#history_label {
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+}
+
 input[type=date] {
     border: 2px solid white;
     background: transparent;
-    box-sizing:border-box;
+    box-sizing: border-box;
     border-radius: 3px;
     color: white;
     font-family: inherit;
+    padding: 3px;
     margin-left: 5px;
     font-size: 100%;
 }
@@ -80,6 +121,7 @@ input[type=date] {
     font-family: inherit;
     font-size: 100%;
 }
+
 ul {
     margin: 0;
     padding: 0;
@@ -87,6 +129,7 @@ ul {
     min-height: 20px;
     list-style-type: none;
 }
+
 ul li span {
     display: flex;
     font-size: 1.4em;
@@ -100,12 +143,22 @@ ul li span {
 }
 
 @media only screen and (max-width: 800px) {
-    
-    .container-1,
-    header, footer, .header-text, ul li span {
-       text-align: center;
-       padding-left: 0;
-       flex-direction: column;
+    .container,
+    header,
+    footer,
+    .header-text,
+    ul li span,
+    .box-3 {
+        text-align: center;
+        padding-left: 0;
+        /* height:auto; */
+        flex-direction: column;
+    }
+    .box-3 {
+        width: auto;
+    }
+    .container {
+        height: auto;
     }
     ul li span {
         min-height: 20px;
@@ -114,7 +167,7 @@ ul li span {
         margin-left: 0px;
     }
     img {
-        width: 85px;
+        max-width: 75%;
     }
-    
 }
+
