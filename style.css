@@ -27,6 +27,7 @@ a {
 
 .container {
     display: flex;
+    
     height: auto;
     border-bottom: 6px solid #015C72;
 }
@@ -36,8 +37,9 @@ a {
 }
 
 .container-right-side-img {
-    flex: 0 0 500px;
-    flex-wrap: wrap;
+    flex: 0 0 500px; 
+    flex-wrap: wrap;  
+    /* width: 500px; */
 }
 
 .container div {
@@ -45,14 +47,19 @@ a {
     background: #337280;
 }
 
-.box-1 {}
+.box-1 {
+    
+}
 
-.box-2 {}
+.box-2 {
+    
+}
 
 .box-3 {
     border-style: solid;
     box-sizing: border-box;
-    width: 430px;
+    width: 470px;
+   
     border-width: 2px;
     border-radius: 3px;
     border-color: black;
@@ -62,6 +69,7 @@ a {
 .box-4 {
     margin-left: 50px;
     margin-top: 30px;
+    width: 500px;
 }
 
 .display-area {
@@ -163,8 +171,12 @@ ul li span {
     ul li span {
         min-height: 20px;
     }
+
+    
     .box-4 {
         margin-left: 0px;
+        width: auto;
+      
     }
     img {
         max-width: 75%;
