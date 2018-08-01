@@ -10,7 +10,7 @@ $(document).ready(function () {
         console.log(searchTerm);
 
         
-        var url = "http://en.wikipedia.org/w/api.php?action=query&prop=extracts&exlimit=1&titles=" + searchTerm + "&format=json&callback=?";
+        var url = "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exlimit=1&titles=" + searchTerm + "&format=json&callback=?";
         $.ajax({
             type: "GET",
             url: url,
