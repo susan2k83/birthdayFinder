@@ -4,79 +4,105 @@
   <title>birthday day</title>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="decsription" content="Find the day of the week you were born">
   <meta name="keywords" content="birthday, day of the week, front end web developer, Susan tarnowski">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+
 
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
-    crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
   <link media="all" type="text/css" rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <header>
-    <h3 class="header-text">Did you ever wonder... </h3>
-  </header>
-
   <div class="container">
-    <div class="container-stacked">
-
-      <div class="box-1">
-        <h1>...what day of the week you were born?</h1>
+    <header class="row header-one">
+      <div class="twelve columns">
+        <img src="birthdayCake.jpg" style="height: 30px;" class="header-img" />
+        <h6 class="header-text">the birthDAY finder</h6>
       </div>
-
-      <div class="box-2">
-        <form>
-          <div>
-            <label for="bday">Enter your birthday:</label>
-            <input type="date" id="userInput" name="dateInput" required pattern="[0-9]{4},[0-9]{2},[0-9]{2}" />
-            <a href=# id="submitButton" data-role="button" class="button">Go</a>
-          </div>
-        </form>
+    </header>
+    <header class="row header-two">
+      <div class="twelve columns">
+        <h4 class="header-text" style="">Did you ever wonder...</h4>
       </div>
+    </header>
 
-      <div class="box-3">
-        <ul>
-          <li>
-            <div>
-              <span id="displayDay"></span>
+
+    <article class="top-article">
+
+      <h4 style="text-align:center">...what day of the week you were born?</h4>
+      <div class="row">
+        <!--first main row-->
+        <div class="twelve columns">
+
+          <form>
+            <div class="row top-row">
+
+              <div class="twelve columns">
+                <!-- <label for="bday">Enter your birthday:</label> -->
+              </div>
+              <div class="twelve columns">
+                <label for="bday">Enter your birthday:</label>
+                <input type="date" id="userInput" name="dateInput" class="u-fill-width" required
+                  pattern="[0-9]{4},[0-9]{2},[0-9]{2}" />
+              </div>
+
+              <div class="twelve columns">
+                <a href="#" id="submitButton" data-role="button" class="button">Go</a>
+              </div>
+              <div id="day-of-week-box" class="twelve columns">
+                <ul>
+                  <li class="day-of-week-li">
+                    <div>
+                      <span id="displayDay" class="display-day"></span>
+                    </div>
+                  </li>
+                </ul>
+
+              </div>
+
             </div>
-          </li>
-        </ul>
-      </div>
+          </form>
+        </div>
 
-      <div>
-        <label for="history_label">What happened on this day in history?</label>
-         <a href=# id="wikiButton" data-role="button" class="button">Go</a>
       </div>
-    </div>
-    <!--end of container-stacked-->
-    <div class="container-right-side-image">
-      <div class="box-4">
-        <img src="birthdayCake.jpg" />
+      <!--end of forst main row-->
+
+      <div class="row">
+        <div class="twelve columns">
+          <label for="history_label">What happened on this day in history?</label>
+          <a href=# id="wikiButton" data-role="button" class="button">Go</a>
+        </div>
       </div>
-    </div>
+    </article>
+    <footer class="">
+      <div class="">
+        <div class="test">
+          <ul id="displayWiki"></ul>
+        </div>
+      </div>
+    </footer>
+
+
+
 
   </div>
-  <!--end of container-1-->
-  <footer>
-    <div>
-      <ul id="displayWiki"></ul>
-    </div>
-  </footer>
+
 
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script src="birthDayPractice.js"></script>
   <script src="wiki5.js"></script>
-  
+
 </body>
 
 </html>

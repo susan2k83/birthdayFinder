@@ -1,185 +1,195 @@
-header {
-    display: flex;
-    height: 100px;
-    background: #FFFFFF;
-    border-bottom: 6px solid #015C72;
-    border-top: 3px solid #015C72;
+body {
+    background: #f1f4f5; 
 }
-
-h3 {
-    color: #00222A;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding-left: 100px;
-    font-family: 'Princess Sofia', cursive;
+* {
+    font-family: 'Raleway';
 }
-
-p {
-    font-family: 'Source Sans Pro';
-    font-size: 1.25em;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
 .container {
-    display: flex;
-    
-    height: auto;
-    border-bottom: 6px solid #015C72;
+    /* border: solid black 1px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    padding: 0;
+    /* height: 90vh; */
+    /* height: auto; */
 }
-
-.container-stacked {
-    flex-grow: 1;
+ .header-one {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    /* background: #FFFFFF; */
+    background-color:white;
+    color: #015c72; 
+    border-bottom: 3px solid #015c72;
+    text-align: left;
+    font-style: italic;
+    width: 100%;
 }
-
-.container-right-side-img {
-    flex: 0 0 500px; 
-    flex-wrap: wrap;  
-    /* width: 500px; */
+ .header-two {
+    background-color: #888C8D;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #015c72;
+    color: white;
+    text-align: center;
 }
-
-.container div {
-    padding: 10px;
-    background: #337280;
+.header-text {
+   margin-bottom: 5px;
 }
-
-.box-1 {
-    
-}
-
-.box-2 {
-    
-}
-
-.box-3 {
-    border-style: solid;
-    box-sizing: border-box;
-    width: 470px;
-   
-    border-width: 2px;
-    border-radius: 3px;
-    border-color: black;
+.header-img {
+    float: left;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
-.box-4 {
-    margin-left: 50px;
-    margin-top: 30px;
-    width: 500px;
+article {
+    height: 90%;
+    background-image: url("birthdayCake7.png"); 
+    background-color: #337280;
+   
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+    text-align: center
+}
+footer {
+    padding-left: 1%;
+    padding-right: 1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   background-color: #888C8D;
+    border-top: 3px solid #015C72;
+
+}
+
+   h4 {
+       color: white;
+   }
+   
+/* 
+ img  {
+     background-color: #337280; 
+    opacity: 0.5;
+    position: center;
+    background-size: cover;
+    z-index: 9;
+}  */
+
+label {
+    font-weight: normal; 
+    font-size: 1.5em;
+}
+input {
+    border: solid white 1px;
+    border-radius: 3px;
+    
+    background: transparent;
+    font-size: 1.5em;
+    text-align: center; 
+    padding-left: 10px;
+    margin-left: 0;
+}
+.display-day{
+    color: #FFFFFF;
+    font-size: 1.25;
+}
+
+label, input {
+    
+    color: white;
+    font-weight: 575;
+}
+.button {
+    /* color: white; */
+    background: #FFFFFF;
+   color :#337280;
+    font-size: 1.25em;
+    font-weight: ;
+    border:  2px solid white;
+   padding-top: 0;
+   padding-bottom:0; 
+   width: 100%;
+   border-radius: 30px;
+}
+.ten, .seven {
+    margin-left: 0;
+}
+
+#day-of-week-box {
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    text-align: center;
+    height: 40px;
+}
+ul {
+    margin-bottom: 0;
+}
+li {
+    list-style-type: none;
+    min-height: 30px;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: white;
 }
 
 .display-area {
     border: 2px solid black;
     box-sizing: border-box;
-    width: inherit;
+ font-family: sans-serif;
+ font-size: 1em;
+ color: white;
     border-radius: 3px;
-    margin: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #888C8D;
+}
+.display-area h2 {
+    font-size: 1.5em;
+}
+.display-area li {
+    font-size: 1em;
+
 }
 
-img {
-    width: 200px;
-    justify-self: center;
-    border: 3px solid #00222A;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-body {
-    font-family: 'Source Sans Pro';
-    background: #888C8D;
-    margin: 0;
-    color: white;
-}
-
-label {
-    font-size: 30px;
-}
-
-#history_label {
-    font-family: 'Source Sans Pro';
-    font-size: 30px;
-}
-
-input[type=date] {
-    border: 2px solid white;
-    background: transparent;
-    box-sizing: border-box;
-    border-radius: 3px;
-    color: white;
-    font-family: inherit;
-    padding: 3px;
-    margin-left: 5px;
-    font-size: 100%;
-}
-
-.button {
-    height: 20px;
-    width: 20px;
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-    border-radius: 3px;
-    padding: 3px 7px 3px 7px;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: 100%;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    min-height: 20px;
-    list-style-type: none;
-}
-
-ul li span {
-    display: flex;
-    font-size: 1.4em;
-    margin-bottom: 1em;
-    color: white;
-}
-
-#displayDay {
-    color: white;
-    font-size: 30px;
-}
-
-@media only screen and (max-width: 800px) {
-    .container,
-    header,
-    footer,
-    .header-text,
-    ul li span,
-    .box-3 {
-        text-align: center;
-        padding-left: 0;
-        /* height:auto; */
-        flex-direction: column;
+    @media screen and (max-width: 770px) {
+  body{
+    margin: 0 0 0 0;
+    padding:0;
+    width: 100%;
+    height:auto;
     }
-    .box-3 {
-        width: auto;
-    }
-    .container {
-        height: auto;
-    }
-    ul li span {
-        min-height: 20px;
-    }
+   * {
+     font-size: 1em;
+     }
+   .container {
+      width: 100vw;
+      margin: 0;
+      /* padding: 0; */
+      height: 100%;
+      box-shadow: none;
+   }
+   .display-area {
+       width: 100%;
+       margin: 0;
+       padding-left:4px;
+       padding-right:4px; 
+       
+   }
+   #day-of-week-box  {
+       height: auto;
+   }
+   ul #displayWiki {
+       /* width: auto; */
+   }
 
-    
-    .box-4 {
-        margin-left: 0px;
-        width: auto;
-      
-    }
-    img {
-        max-width: 75%;
-    }
-}
+   article {
+       width: auto;
+     margin:0;
+   }
+   footer {
+  
+   }
 
+    }
